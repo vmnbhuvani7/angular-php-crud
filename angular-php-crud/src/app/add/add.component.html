@@ -1,0 +1,27 @@
+<div>
+    <h2 class="text-center">Add students</h2>
+    <form class="form" [formGroup]="addForm" novalidate>
+        <!-- {{userForm.value | json}} -->
+        <!-- <div class="form-group">
+            <label for="sId">Student Id: </label>
+            <input type="number"  ngModel formControlName="sId" placeholder="student Id" name="sId" class="form-control" />
+        </div> -->
+        <div class="form-group">
+            <label for="fname">First Name: </label>
+            <input type="text"  ngModel formControlName="fname" placeholder="Student first name" name="fname"
+                class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="lname">Last Name: </label>
+            <input type="text" ngModel formControlName="lname" placeholder="Student last name" name="lname"
+                class="form-control" /> 
+        </div>
+        <div class="form-group">
+            <label for="email">Email: </label>
+            <input type="email"  ngModel formControlName="email" placeholder="student email" name="email" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-success" (click)="onSubmit()">Save</button>
+
+    </form>
+</div>
