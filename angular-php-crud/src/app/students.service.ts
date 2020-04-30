@@ -25,7 +25,7 @@ export class StudentsService {
     return this.http.post('http://localhost/angular7php/insert1.php',student);
   } 
 
-  getStudentById(sId: number){
+  getStudentById(sId: number){ 
     return this.http.get<Students[]>('http://localhost/angular7php/getById.php?sId='+ sId);
   }
 

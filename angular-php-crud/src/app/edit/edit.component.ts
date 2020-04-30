@@ -22,7 +22,7 @@ export class EditComponent implements OnInit {
     this._studentService.getStudentById(routeParams.sId)
     .subscribe((data: any) => {
       console.log(data); 
-      // this.addForm.patchValue(data);
+      this.addForm.patchValue(data);
     });
 
     this.addForm = this.formBuilder.group({
